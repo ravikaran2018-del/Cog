@@ -1,0 +1,84 @@
+{
+  "reporting_entity_name": "Sample Health Org",
+  "reporting_entity_type": "payer",
+  "plan_name": "Sample Health Plan",
+  "issuer_name": "Sample Issuer",
+  "plan_sponsor_name": "Sample Sponsor",
+  "plan_id_type": "hios",
+  "plan_id": "1234567890",
+  "plan_market_type": "group",
+  "last_updated_on": "2025-10-30",
+  "version": "2.0.0",
+  "out_of_network": [
+    {
+      "name": "Knee Replacement",
+      "billing_code_type": "MS-DRG",
+      "billing_code_type_version": "2023-11-26",
+      "billing_code": "37.2",
+      "description": "Major joint replacement or reattachment of lower extremity without major complications",
+      "allowed_amounts": [
+        {
+          "tin": {
+            "type": "ein",
+            "value": "12-3456789"
+          },
+          "billing_class": "institutional",
+          "setting": "inpatient",
+          "payments": [
+            {
+              "allowed_amount": 18000.0,
+              "billing_code_modifier": [
+                "modifier1"
+              ],
+              "providers": [
+                {
+                  "billed_charge": 20000.0,
+                  "npi": [
+                    1234567890
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MRI Scan",
+      "billing_code_type": "CPT",
+      "billing_code_type_version": "2025",
+      "billing_code": "70551",
+      "description": "MRI of brain without contrast",
+      "allowed_amounts": [
+        {
+          "tin": {
+            "type": "npi",
+            "value": "9876543210"
+          },
+          "billing_class": "professional",
+          "setting": "outpatient",
+          "service_code": [
+            "10",
+            "20"
+          ],
+          "payments": [
+            {
+              "allowed_amount": 500.0,
+              "billing_code_modifier": [
+                "modifierA"
+              ],
+              "providers": [
+                {
+                  "billed_charge": 750.0,
+                  "npi": [
+                    1098765432
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
