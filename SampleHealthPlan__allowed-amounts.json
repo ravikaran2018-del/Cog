@@ -1,0 +1,47 @@
+{
+  "reporting_entity_name": "Sample Health Org",
+  "reporting_entity_type": "issuer",
+  "plan_name": "Sample Health Plan",
+  "issuer_name": "Sample Issuer",
+  "plan_sponsor_name": "Sample Sponsor",
+  "plan_id_type": "ein",
+  "plan_id": "12-3456789",
+  "plan_market_type": "group",
+  "last_updated_on": "2025-10-30",
+  "version": "2.0.0",
+  "out_of_network": [
+    {
+      "name": "Knee Replacement Surgery",
+      "billing_code_type": "MS-DRG",
+      "billing_code_type_version": "2023",
+      "billing_code": "470",
+      "description": "Major joint replacement or reattachment of lower extremity without major complications",
+      "allowed_amounts": [
+        {
+          "tin": {
+            "type": "ein",
+            "value": "98-7654321"
+          },
+          "billing_class": "institutional",
+          "setting": "inpatient",
+          "payments": [
+            {
+              "allowed_amount": 14500.0,
+              "billing_code_modifier": [
+                "modifierA"
+              ],
+              "providers": [
+                {
+                  "billed_charge": 16000.0,
+                  "npi": [
+                    1234567890
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
