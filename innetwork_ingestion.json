@@ -1,0 +1,110 @@
+{
+  "reporting_entity_name": "AMPS",
+  "reporting_entity_type": "third party",
+  "plan_name": "AMPSNEXT",
+  "issuer_name": "karthic",
+  "plan_sponsor_name": "MRF",
+  "plan_id_type": "hios",
+  "plan_id": "9980123456",
+  "plan_market_type": "individual",
+  "version": "2.0.0",
+  "last_updated_on": "2025-10-30",
+  "provider_references": [
+    {
+      "provider_group_id": 1,
+      "provider_groups": [
+        {
+          "npi": [
+            1366433195
+          ],
+          "tin": {
+            "type": "ein",
+            "value": "34-1893439",
+            "business_name": "Provider Group One"
+          }
+        }
+      ],
+      "network_name": [
+        "Network A"
+      ]
+    }
+  ],
+  "in_network": [
+    {
+      "negotiation_arrangement": "ffs",
+      "name": "Inj perflutren lip micros,ml",
+      "billing_code_type": "CPT",
+      "billing_code_type_version": "2023",
+      "billing_code": "Q9957",
+      "description": "Inj perflutren lip micros,ml",
+      "negotiated_rates": [
+        {
+          "provider_references": [
+            1
+          ],
+          "negotiated_prices": [
+            {
+              "negotiated_type": "negotiated",
+              "billing_class": "institutional",
+              "negotiated_rate": 1075.5,
+              "expiration_date": "2026-12-31",
+              "setting": "outpatient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "negotiation_arrangement": "ffs",
+      "name": "Wheelchair accessory",
+      "billing_code_type": "HCPCS",
+      "billing_code_type_version": "2023",
+      "billing_code": "E1234",
+      "description": "Wheelchair accessory",
+      "negotiated_rates": [
+        {
+          "provider_references": [
+            1
+          ],
+          "negotiated_prices": [
+            {
+              "negotiated_type": "negotiated",
+              "billing_class": "professional",
+              "negotiated_rate": 250.0,
+              "expiration_date": "2026-12-31",
+              "setting": "outpatient",
+              "service_code": [
+                "10", "20"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "negotiation_arrangement": "ffs",
+      "name": "Hip Replacement",
+      "billing_code_type": "MS-DRG",
+      "billing_code_type_version": "2023",
+      "billing_code": "470",
+      "severity_of_illness": "Major Complications or Comorbidities",
+      "description": "Major joint replacement or reattachment of lower extremity without major complications",
+      "negotiated_rates": [
+        {
+          "provider_references": [
+            1
+          ],
+          "negotiated_prices": [
+            {
+              "negotiated_type": "negotiated",
+              "billing_class": "institutional",
+              "negotiated_rate": 15000.0,
+              "expiration_date": "2026-12-31",
+              "setting": "inpatient"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
